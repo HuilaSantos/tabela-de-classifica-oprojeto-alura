@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Tabela de classificação - Projeto Alura</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<html>
+
+<head>
+  <title>
+    Imersão Dev
+  </title>
+</head>
+
+<body>
+  <h1>Classificação Alura</h1>
+
+  <fieldset>
+    <legend>
+      Adicionar novo jogador
+    </legend>
+    <input type="text" id="campoNomeJogador" placeholder="Digite o nome do jogador" />
+    <input type="number" id="vitorias" min=0 max=100 placeholder="Vitórias">
+    <input type="number" id="empates" min=0 max=100 placeholder="Empates">
+    <input type="number" id="derrotas" min=0 max=100 placeholder="Derrotas">
+    <button onClick="criarJogador()">Adicionar novo jogador</button>
+  </fieldset><br>
+
+  <table style="width:100%">
+    <thead>
+      <tr>
+        <th>Nome</th>
+        <th>Vitórias</th>
+        <th>Empates</th>
+        <th>Derrotas</th>
+        <th>Pontos</th>
+        <th colspan="5">Ações</th>
+      </tr>
+    </thead>
+    <tbody id="tabelaJogadores">
+
+    </tbody>
+  </table>
+  <button onClick="apagarJogadores()">Apagar todos os jogadores</button>
+  <button onClick="validarPontos()">Validar os registros</button>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
